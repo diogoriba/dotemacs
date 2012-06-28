@@ -1,0 +1,25 @@
+/* CSS file for org-mode generated files */
+body
+{
+    font-family: "Helvetica" "Arial";
+    font-size: 10pt;
+    font-smooth: always;
+    background-color: #ccc;
+    margin: 20px;
+}
+#table-of-contents { display: none; }
+h1 { font-size: 2.4em; }
+h2 { font-size: 1.6em; font-weight: none; }
+h3 { font-size: 1.4em; font-weight: none; }
+h4 { font-size: 1.2em; font-weight: none; }
+table { margin: 10px 0 10px; }
+tr th { background-color: #aaa; }
+ol, ul { color: #666; }
+div[id^="outline-container"] { margin-left: 20px; }
+li[id^="sec"] { margin-top: 5px; color: #000; }
+p { margin-left: 20px; }
+.timestamp { color: inherit; }
+#postamble { font-size: 0.7em; margin-top: 50px; }
+.author, .date, .creator { margin: 5px;; }
+.TODO { color: #900; }
+.DONE { color: #090; }
