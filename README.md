@@ -3,8 +3,10 @@
 
 My emacs configuration files.
 
-To install on linux:
+<pre>
+<strong>To install on linux:</strong>
 cd dotemacs
 sudo cp -r . ~/
 rm -rf putty
 rm -rf win32
+</pre>
