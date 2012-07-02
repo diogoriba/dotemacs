@@ -1,3 +1,4 @@
 # Set default behaviour, in case users don't have core.autocrlf set.
 * text eol=lf
+*.bat text eol=crlf
 *.exe binary
