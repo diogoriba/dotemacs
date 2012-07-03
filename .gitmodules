@@ -1,24 +1,24 @@
 [submodule "autopair"]
 	path = .elisp/autopair
-	url = git@github.com:emacsmirror/autopair.git
+	url = git://github.com/emacsmirror/autopair.git
 [submodule "cmd-mode"]
 	path = .elisp/cmd-mode
-	url = git@github.com:emacsmirror/cmd-mode.git
+	url = git://github.com/emacsmirror/cmd-mode.git
 [submodule "csharp-mode"]
 	path = .elisp/csharp-mode
-	url = git@github.com:emacsmirror/csharp-mode.git
+	url = git://github.com/emacsmirror/csharp-mode.git
 [submodule "fsharp-mode"]
 	path = .elisp/fsharp-mode
-	url = git@github.com:emacsmirror/fsharp-mode.git
+	url = git://github.com/emacsmirror/fsharp-mode.git
 [submodule "hl-tags-mode"]
 	path = .elisp/hl-tags-mode
-	url = git@github.com:deactivated/hl-tags-mode.git
+	url = git://github.com/deactivated/hl-tags-mode.git
 [submodule "htmlize"]
 	path = .elisp/htmlize
-	url = git@github.com:emacsmirror/htmlize.git
+	url = git://github.com/emacsmirror/htmlize.git
 [submodule "mo-git-blame"]
 	path = .elisp/mo-git-blame
-	url = git@github.com:mbunkus/mo-git-blame.git
+	url = git://github.com/mbunkus/mo-git-blame.git
 [submodule "multi-term"]
 	path = .elisp/multi-term
-	url = git@github.com:emacsmirror/multi-term.git
+	url = git://github.com/emacsmirror/multi-term.git
