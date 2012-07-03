@@ -13,7 +13,7 @@ echo rsync.ignore >> rsync.ignore
 echo Installing emacs configuration files
 rm -rf putty
 rm -rf win32
-sudo rsync -rv --exclude-from rsync.ignore . ~/ || { echo "Error copying files"; }
+sudo rsync -prv --exclude-from rsync.ignore . ~/ || { echo "Error copying files"; }
 echo Cleaning rsync ignore file
 rm rsync.ignore
 exit 0
