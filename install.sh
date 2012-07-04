@@ -8,6 +8,7 @@ git submodule update
 echo Creating rsync ignore file
 echo install.bat > rsync.ignore
 echo install.sh >> rsync.ignore
+echo README.md >> rsync.ignore
 echo .git >> rsync.ignore
 echo rsync.ignore >> rsync.ignore
 echo Installing emacs configuration files

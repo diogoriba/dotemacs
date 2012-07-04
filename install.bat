@@ -8,6 +8,7 @@ call git submodule update
 ECHO Creating xcopy ignore file
 ECHO install.bat > xcopy.ignore
 ECHO install.sh >> xcopy.ignore
+ECHO README.md >> xcopy.ignore
 ECHO .git >> xcopy.ignore
 ECHO xcopy.ignore >> xcopy.ignore
 
