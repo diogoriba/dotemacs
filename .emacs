@@ -2,8 +2,8 @@
 (require 'find-lisp)
 (defconst emacs-root (getenv "HOME"))
 (defconst emacs-elisp-root (concat emacs-root "/.elisp"))
-(defconst emacs-config-file ".emacs")
-(defconst emacs-config-loader "diogoriba.config.el")
+(defconst emacs-config-file (concat emacs-root ".emacs"))
+(defconst emacs-config-loader (concat emacs-root "diogoriba.config.el"))
 
 (defvar config-files (append (list (concat emacs-root "/" emacs-config-file) (concat emacs-root "/" emacs-config-loader)) (find-lisp-find-files emacs-elisp-root "\\.el$")))
 
