@@ -14,6 +14,9 @@ echo rsync.ignore >> rsync.ignore
 echo Installing emacs configuration files
 rm -rf putty
 rm -rf win32
+rm diogoriba.config.elc
+rm .emacs.elc
+rm -rf .elisp/*.elc
 sudo rsync -prv --chmod=ugo+rwx,Dugo+rwx --exclude-from rsync.ignore . ~/ || { echo "Error copying files"; }
 echo Cleaning rsync ignore file
 rm rsync.ignore

@@ -231,7 +231,10 @@ Then move to that line and indent accordning to mode"
 (add-to-list 'auto-mode-alist '("\\.x[ms]l$" . sgml-mode))
 (add-to-list 'auto-mode-alist '("\\.[xd]?html?$" . sgml-mode))
 (add-hook 'sgml-mode-hook 'my-xml-mode-hook)
-(add-hook 'js-mode-hook
+
+(require 'jsm)
+(add-to-list 'auto-mode-alist '("\\.js$" . jsm-mode))
+(add-hook 'jsm-mode-hook
 		  (lambda ()
 			(imenu-add-menubar-index)
 			(hs-minor-mode t)))
