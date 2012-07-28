@@ -95,6 +95,7 @@
 (setq-default indent-tabs-mode t)
 (defun indent-all ()
   "Indent the whole buffer"
+  (interactive)
   (indent-region (point-min) (point-max))
 )
 (global-set-key (kbd "M-<tab>") 'indent-all) ;review binding. m-tab changes window in w32
@@ -184,6 +185,7 @@ Then move to that line and indent accordning to mode"
       (insert "\t")
       )
     )
+  (push ?{ (getf autopair-dont-pair :code))
   (setq parens-require-spaces nil)
   (hs-minor-mode t)
   )
