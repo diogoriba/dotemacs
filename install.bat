@@ -15,7 +15,10 @@ ECHO xcopy.ignore >> xcopy.ignore
 :INSTALL
 IF [%HOME%]==[] SET HOME=%USERPROFILE%
 ECHO Installing emacs configuration files
-XCOPY * %HOME% /H /E /Y /EXCLUDE:xcopy.ignore
+DEL %HOME%\.emacs.elc
+DEL %HOME%\diogoriba.config.elc
+DEL /S %HOME%\.elisp\*.elc
+XCOPY * %HOME%\ /H /E /Y /F /G /EXCLUDE:xcopy.ignore
 
 :CLEANUP
 ECHO Cleaning xcopy ignore file
