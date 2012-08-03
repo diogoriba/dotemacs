@@ -235,7 +235,9 @@ Then move to that line and indent accordning to mode"
 (add-hook 'sgml-mode-hook 'my-xml-mode-hook)
 
 (require 'jsm)
+(require 'coffee-mode)
 (add-to-list 'auto-mode-alist '("\\.js$" . jsm-mode))
+(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
 (add-hook 'jsm-mode-hook
 		  (lambda ()
 			(imenu-add-menubar-index)

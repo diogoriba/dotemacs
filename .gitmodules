@@ -22,3 +22,6 @@
 [submodule "multi-term"]
 	path = .elisp/multi-term
 	url = http://github.com/emacsmirror/multi-term.git
+[submodule ".elisp/coffee-mode"]
+	path = .elisp/coffee-mode
+	url = http://github.com/defunkt/coffee-mode.git
