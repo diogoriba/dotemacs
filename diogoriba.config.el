@@ -44,12 +44,15 @@
 (tool-bar-mode 0)
 
 (require 'color-theme)
+(require 'color-theme-standard)
 (require 'color-theme-zenburn)
 (require 'color-theme-scintilla)
 (require 'color-theme-almost-monokai)
+(require 'color-theme-solarized)
 
 (defun normal-color ()
   (interactive)
+  (color-theme-standard)
   (color-theme-almost-monokai)
   (toggle-truncate-lines 0)
   (if (eq (window-system) 'w32) (set-default-font "Consolas-11"))
@@ -58,15 +61,16 @@
 
 (defun presentation-color ()
   (interactive)
+  (color-theme-standard)
   (color-theme-scintilla)
   (visual-line-mode t)
-  (if (eq (window-system) 'w32) (set-default-font "Consolas-11"))
+  (if (eq (window-system) 'w32) (set-default-font "Consolas-16"))
   "presentation-color"
 )
 
 (if (> (display-color-cells) 16)
   (normal-color)
-;else
+  ;;else
   (progn
 	(toggle-truncate-lines 0)
 	(message "Terminal does not support themes")

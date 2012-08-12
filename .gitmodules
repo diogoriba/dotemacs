@@ -28,3 +28,6 @@
 [submodule ".elisp/almost-monokai"]
 	path = .elisp/almost-monokai
 	url = https://github.com/lut4rp/almost-monokai.git
+[submodule ".elisp/emacs-color-theme-solarized"]
+	path = .elisp/emacs-color-theme-solarized
+	url = http://github.com/sellout/emacs-color-theme-solarized.git
