@@ -46,10 +46,11 @@
 (require 'color-theme)
 (require 'color-theme-zenburn)
 (require 'color-theme-scintilla)
+(require 'color-theme-almost-monokai)
 
 (defun normal-color ()
   (interactive)
-  (color-theme-zenburn)
+  (color-theme-almost-monokai)
   (toggle-truncate-lines 0)
   (if (eq (window-system) 'w32) (set-default-font "Consolas-11"))
   "normal-color"
