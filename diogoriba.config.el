@@ -21,9 +21,12 @@
 	  (setq exec-path (cons putty-path exec-path))
 	  (setq tramp-default-method "plink")
 	  )
-;else
+;;else
     (setq tramp-default-method "scp")
 )
+
+;;; Dired goodies
+(require 'dirtree)
 
 ;;; Themes/Layout
 (fset 'yes-or-no-p 'y-or-n-p)
