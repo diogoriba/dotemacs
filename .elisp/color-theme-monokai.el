@@ -34,6 +34,7 @@
    '(color-theme-almost-monokai
      ((background-color . "#272821")
       (foreground-color . "#F8F8F2")
+	  (background-mode . dark)
       (cursor-color . "#DAD085"))
      (default ((t (nil))))
 	 (fringe ((t (:background "#272821"))))
