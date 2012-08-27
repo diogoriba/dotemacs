@@ -42,18 +42,19 @@
 (column-number-mode t)
 (menu-bar-mode 0)
 (tool-bar-mode 0)
+(set-scroll-bar-mode 'right)
 
 (require 'color-theme)
 (require 'color-theme-standard)
 (require 'color-theme-zenburn)
 (require 'color-theme-scintilla)
-(require 'color-theme-almost-monokai)
-(require 'color-theme-solarized)
+;;(require 'color-theme-almost-monokai)
+;;(require 'color-theme-solarized)
 
 (defun normal-color ()
   (interactive)
   (color-theme-standard)
-  (color-theme-almost-monokai)
+  (color-theme-zenburn)
   (toggle-truncate-lines 0)
   (if (eq (window-system) 'w32) (set-default-font "Consolas-11"))
   "normal-color"
