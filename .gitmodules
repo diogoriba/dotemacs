@@ -28,3 +28,6 @@
 [submodule ".elisp/emacs-color-theme-solarized"]
 	path = .elisp/emacs-color-theme-solarized
 	url = http://github.com/sellout/emacs-color-theme-solarized.git
+[submodule ".elisp/zencoding"]
+	path = .elisp/zencoding
+	url = http://github.com/rooney/zencoding.git

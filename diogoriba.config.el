@@ -86,8 +86,8 @@
 ;;; Buffer switching
 (autoload 'ibuffer "ibuffer" "List buffers." t)
 (iswitchb-mode t)
-(global-set-key (kbd "C-S-b") 'ibuffer)
-(global-set-key (kbd "C-S-n") 'iswitchb-buffer)
+(global-set-key (kbd "C-M-b") 'ibuffer)
+(global-set-key (kbd "C-M-n") 'iswitchb-buffer)
 
 ;;; Copy/Paste
 (cua-mode t)
@@ -243,6 +243,7 @@ Then move to that line and indent accordning to mode"
 (add-to-list 'auto-mode-alist '("\\.[xd]?html?$" . sgml-mode))
 (add-hook 'sgml-mode-hook 'my-xml-mode-hook)
 
+(require 'zencoding-mode)
 (require 'jsm)
 (require 'coffee-mode)
 (add-to-list 'auto-mode-alist '("\\.js$" . jsm-mode))
