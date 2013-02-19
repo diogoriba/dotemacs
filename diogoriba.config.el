@@ -41,8 +41,8 @@
 (line-number-mode t)
 (column-number-mode t)
 (menu-bar-mode 0)
-(tool-bar-mode 0)
-(set-scroll-bar-mode 'right)
+;(tool-bar-mode 0)
+;(set-scroll-bar-mode 'right)
 
 (require 'color-theme)
 (require 'color-theme-standard)
@@ -202,8 +202,8 @@ Then move to that line and indent accordning to mode"
 (add-hook 'csharp-mode-hook 'my-c-mode-hook)
 
 ;; F#
-(require 'fsharp)
-(add-to-list 'auto-mode-alist '("\\.fs[xs]?$" . fsharp-mode))
+;(require 'fsharp)
+;(add-to-list 'auto-mode-alist '("\\.fs[xs]?$" . fsharp-mode))
 
 ;;; XML/HTML
 (require 'hl-tags-mode)
