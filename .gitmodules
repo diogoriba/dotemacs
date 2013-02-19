@@ -7,9 +7,6 @@
 [submodule "csharp-mode"]
 	path = .elisp/csharp-mode
 	url = http://github.com/emacsmirror/csharp-mode.git
-[submodule "fsharp-mode"]
-	path = .elisp/fsharp-mode
-	url = http://github.com/emacsmirror/fsharp-mode.git
 [submodule "hl-tags-mode"]
 	path = .elisp/hl-tags-mode
 	url = http://github.com/deactivated/hl-tags-mode.git
