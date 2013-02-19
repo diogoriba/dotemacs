@@ -43,6 +43,8 @@
 (menu-bar-mode 0)
 ;(tool-bar-mode 0)
 ;(set-scroll-bar-mode 'right)
+(setq split-height-threshold nil)
+(setq split-width-threshold nil)
 
 (require 'color-theme)
 (require 'color-theme-standard)
