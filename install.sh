@@ -17,7 +17,7 @@ rm -rf win32
 rm ~/diogoriba.config.elc
 rm ~/.emacs.elc
 rm -rf ~/.elisp/*.elc
-rsync -prv --chmod=ugo+rwx,Dugo+rwx --exclude-from rsync.ignore . ~/ || { echo "Error copying files"; }
+rsync -prv --exclude-from rsync.ignore . ~/ || { echo "Error copying files"; }
 echo Cleaning rsync ignore file
 rm rsync.ignore
 exit 0
