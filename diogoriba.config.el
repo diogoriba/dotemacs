@@ -27,6 +27,7 @@
 
 ;;; Dired goodies
 (require 'dirtree)
+(require 'flymake)
 
 ;;; Themes/Layout
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -41,8 +42,8 @@
 (line-number-mode t)
 (column-number-mode t)
 (menu-bar-mode 0)
-;(tool-bar-mode 0)
-;(set-scroll-bar-mode 'right)
+(tool-bar-mode 0)
+(set-scroll-bar-mode 'right)
 (setq split-height-threshold nil)
 (setq split-width-threshold nil)
 
@@ -248,12 +249,15 @@ Then move to that line and indent accordning to mode"
 (require 'zencoding-mode)
 (require 'jsm)
 (require 'coffee-mode)
+(defun my-jsm-mode-hook ()
+  (setq tab-width 4)
+  (setq js-indent-level 4)
+  (setq indent-tabs-mode nil)
+  (imenu-add-menubar-index)
+  (hs-minor-mode t))
 (add-to-list 'auto-mode-alist '("\\.js$" . jsm-mode))
 (add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
-(add-hook 'jsm-mode-hook
-		  (lambda ()
-			(imenu-add-menubar-index)
-			(hs-minor-mode t)))
+(add-hook 'jsm-mode-hook 'my-jsm-mode-hook)
 
 ;;; Org mode
 (require 'org)
